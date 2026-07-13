@@ -1,0 +1,46 @@
+<svg width="1500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#7C3AED;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1500" height="500" fill="url(#bg)"/>
+  <rect width="1500" height="500" fill="url(#glow)"/>
+  
+  <!-- Grid lines -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="1500" y2="100"/>
+    <line x1="0" y1="200" x2="1500" y2="200"/>
+    <line x1="0" y1="300" x2="1500" y2="300"/>
+    <line x1="0" y1="400" x2="1500" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="900" y1="0" x2="900" y2="500"/>
+    <line x1="1200" y1="0" x2="1200" y2="500"/>
+  </g>
+  
+  <!-- Brain icon -->
+  <text x="750" y="180" font-size="64" text-anchor="middle">🧠👑</text>
+  
+  <!-- Main title -->
+  <text x="750" y="250" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#ffffff" text-anchor="middle">BIG BRAIN APE</text>
+  
+  <!-- Subtitle -->
+  <text x="750" y="300" font-family="Arial, sans-serif" font-size="22" fill="#a78bfa" text-anchor="middle">Fully Autonomous AI Trading Bot</text>
+  
+  <!-- Tagline -->
+  <text x="750" y="350" font-family="Arial, sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle">Macro-Driven · 98 Assets · Hyperliquid · Druckenmiller Framework</text>
+  
+  <!-- Bottom accent line -->
+  <rect x="600" y="400" width="300" height="3" rx="1.5" fill="#7C3AED" opacity="0.6"/>
+  
+  <!-- Link -->
+  <text x="750" y="440" font-family="Arial, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">simzy420.github.io/Simzy420</text>
+</svg>
