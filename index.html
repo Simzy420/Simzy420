@@ -50,23 +50,37 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 24px rgba(124, 58, 237, 0.2);
         }
+        .link-card.featured {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(91, 33, 182, 0.1));
+            border: 1px solid rgba(124, 58, 237, 0.4);
+            box-shadow: 0 0 20px rgba(124, 58, 237, 0.15);
+        }
+        .link-card.featured:hover {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.3), rgba(91, 33, 182, 0.15));
+            border-color: rgba(124, 58, 237, 0.7);
+            box-shadow: 0 8px 32px rgba(124, 58, 237, 0.3);
+        }
         .link-icon { font-size: 28px; min-width: 32px; text-align: center; }
         .link-text { flex: 1; }
         .link-title { font-size: 15px; font-weight: 600; }
         .link-desc { font-size: 12px; color: #94a3b8; margin-top: 2px; }
         .link-arrow { color: #64748b; font-size: 18px; }
+        .section-label {
+            font-size: 11px; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 1.5px; color: #64748b;
+            margin: 24px 0 10px 4px;
+        }
         .footer { margin-top: 40px; text-align: center; font-size: 12px; color: #64748b; }
         .stats { display: flex; justify-content: center; gap: 32px; margin: 20px 0 30px; }
         .stat { text-align: center; }
         .stat-value { font-size: 22px; font-weight: 700; color: #a78bfa; }
-        .stat-label { font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; }
-        .badges { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 30px; }
+        .stat-label { font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+        .badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 16px 0 0; }
         .badge {
-            padding: 6px 14px; border-radius: 20px;
-            font-size: 11px; font-weight: 600;
+            font-size: 11px; padding: 4px 10px;
             background: rgba(124, 58, 237, 0.15);
             border: 1px solid rgba(124, 58, 237, 0.3);
-            color: #a78bfa;
+            border-radius: 20px; color: #c4b5fd;
         }
     </style>
 </head>
@@ -93,41 +107,90 @@
             </div>
         </div>
         <div class="links">
+            <!-- MAIN PRODUCT -->
+            <a href="https://t.me/BigBrain2Bot" class="link-card featured">
+                <div class="link-icon">🤖</div>
+                <div class="link-text"><div class="link-title">Telegram Bot — Free Analysis</div><div class="link-desc">@BigBrain2Bot — Free stock & crypto analysis. Trading bot hire.</div></div>
+                <div class="link-arrow">→</div>
+            </a>
+
+            <!-- DASHBOARD -->
+            <a href="https://simzy420.github.io/big-brain-ape-dashboard/app35.html?owner=1" class="link-card">
+                <div class="link-icon">📊</div>
+                <div class="link-text"><div class="link-title">Live Trading Dashboard</div><div class="link-desc">Real-time positions, P&L, charts, and market data</div></div>
+                <div class="link-arrow">→</div>
+            </a>
+
+            <div class="section-label">Products</div>
+
+            <!-- SNIPER BOT -->
+            <a href="https://github.com/Simzy420/telegram-memecoin-sniper-bot-" class="link-card">
+                <div class="link-icon">🎯</div>
+                <div class="link-text"><div class="link-title">Memecoin Sniper Bot</div><div class="link-desc">Auto-trades memecoins while you sleep — 6 chains, AI specialists</div></div>
+                <div class="link-arrow">→</div>
+            </a>
+
+            <!-- BIG BRAIN API -->
+            <a href="https://simzy-bigbrain-api.hf.space" class="link-card">
+                <div class="link-icon">🔌</div>
+                <div class="link-text"><div class="link-title">Big Brain API</div><div class="link-desc">Financial data API for developers — $0.01-$0.10 per call</div></div>
+                <div class="link-arrow">→</div>
+            </a>
+
+            <div class="section-label">Docs & Content</div>
+
+            <!-- DOCUMENTATION -->
             <a href="https://big-brain-ape-trading-bot.mintlify.app" class="link-card">
                 <div class="link-icon">📖</div>
                 <div class="link-text"><div class="link-title">Documentation</div><div class="link-desc">Full bot docs, strategy, API reference</div></div>
                 <div class="link-arrow">→</div>
             </a>
-            <a href="https://bigbrainape.substack.com" class="link-card">
-                <div class="link-icon">📰</div>
-                <div class="link-text"><div class="link-title">Substack — Market Briefings</div><div class="link-desc">Daily macro analysis and trade briefings</div></div>
-                <div class="link-arrow">→</div>
-            </a>
-            <a href="https://x.com/Big_Brain_Ape" class="link-card">
-                <div class="link-icon">🐦</div>
-                <div class="link-text"><div class="link-title">X / Twitter</div><div class="link-desc">@Big_Brain_Ape — Trade signals and updates</div></div>
-                <div class="link-arrow">→</div>
-            </a>
-            <a href="https://github.com/Big-Brain-Ape-Trading-Bot" class="link-card">
-                <div class="link-icon">🐙</div>
-                <div class="link-text"><div class="link-title">GitHub</div><div class="link-desc">Source code and strategy documentation</div></div>
-                <div class="link-arrow">→</div>
-            </a>
-            <a href="https://github.com/Simzy420/Big-Brain-Ape-" class="link-card">
-                <div class="link-icon">📦</div>
-                <div class="link-text"><div class="link-title">GitHub (Strategy Repo)</div><div class="link-desc">Active strategy repo with live README</div></div>
-                <div class="link-arrow">→</div>
-            </a>
-            <a href="https://degen.virtuals.io" class="link-card">
-                <div class="link-icon">🏆</div>
-                <div class="link-text"><div class="link-title">DegenClaw Arena</div><div class="link-desc">Competitor #1729 — Perpetuals Championship</div></div>
-                <div class="link-arrow">→</div>
-            </a>
+
+            <!-- QUICK START -->
             <a href="https://big-brain-ape-trading-bot.mintlify.app/introduction" class="link-card">
                 <div class="link-icon">⚡</div>
                 <div class="link-text"><div class="link-title">Quick Start Guide</div><div class="link-desc">How the bot works — start here</div></div>
                 <div class="link-arrow">→</div>
             </a>
+
+            <!-- SUBSTACK -->
+            <a href="https://bigbrainape.substack.com" class="link-card">
+                <div class="link-icon">📰</div>
+                <div class="link-text"><div class="link-title">Substack — Market Briefings</div><div class="link-desc">Daily macro analysis and trade briefings</div></div>
+                <div class="link-arrow">→</div>
+            </a>
+
+            <div class="section-label">Social & Code</div>
+
+            <!-- X / TWITTER -->
+            <a href="https://x.com/Big_Brain_Ape" class="link-card">
+                <div class="link-icon">🐦</div>
+                <div class="link-text"><div class="link-title">X / Twitter</div><div class="link-desc">@Big_Brain_Ape — Trade signals and updates</div></div>
+                <div class="link-arrow">→</div>
+            </a>
+
+            <!-- GITHUB -->
+            <a href="https://github.com/Big-Brain-Ape-Trading-Bot" class="link-card">
+                <div class="link-icon">🐙</div>
+                <div class="link-text"><div class="link-title">GitHub</div><div class="link-desc">Source code and strategy documentation</div></div>
+                <div class="link-arrow">→</div>
+            </a>
+
+            <!-- GITHUB STRATEGY REPO -->
+            <a href="https://github.com/Simzy420/Big-Brain-Ape-" class="link-card">
+                <div class="link-icon">📦</div>
+                <div class="link-text"><div class="link-title">GitHub (Strategy Repo)</div><div class="link-desc">Active strategy repo with live README</div></div>
+                <div class="link-arrow">→</div>
+            </a>
+
+            <!-- DEGENCLAW ARENA -->
+            <a href="https://degen.virtuals.io" class="link-card">
+                <div class="link-icon">🏆</div>
+                <div class="link-text"><div class="link-title">DegenClaw Arena</div><div class="link-desc">Competitor #1729 — Perpetuals Championship</div></div>
+                <div class="link-arrow">→</div>
+            </a>
+
+            <!-- EMAIL -->
             <a href="mailto:Big.Brain.Ape.Trading.Bot@gmail.com" class="link-card">
                 <div class="link-icon">📧</div>
                 <div class="link-text"><div class="link-title">Email</div><div class="link-desc">Big.Brain.Ape.Trading.Bot@gmail.com</div></div>
